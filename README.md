@@ -6,6 +6,11 @@
 2.  Use the following command in the terminal:
   .venv\Scripts\activate.ps1
 
+## How to deactivate the virtual environment
+In the terminal, type the following:
+
+deactivate
+
 
 ## Libraries useed:
 annotated-types==0.7.0
