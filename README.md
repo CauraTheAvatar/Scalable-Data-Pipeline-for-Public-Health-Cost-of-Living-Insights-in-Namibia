@@ -1,3 +1,14 @@
+# Scalable Data Pipeline for Cost of Living Analysis in Namibia
+
+## Problem Statement
+How has inflation evolved in Namibia over time, and how does it coincide with trends in key macro-economic indicators such as GDP per capita and government expenditure?
+
+This project builds a scalable data pipeline to analysee inflation trends in Namibia and their association with macroeconomi-c indicators such as GDP per capita and government expenditure using national-level time series data.
+
+## Scope
+The analysis focuses on macroeconomic time series patterns and does not attempt to infer causality or micro-level economic impacts from 1993 to 2024, with projections till 2030.
+
+
 ## How to activate the Virtual Environment
 1.  Select the python Interpreter:
   Press Shift + Control + P to open the Command Palette and click on the Python: Select Interpreter.
@@ -84,3 +95,17 @@ pip install apache-airflow (Day 6 will confirm this choice)
 
 ## To check all the installed libraries
 pip freeze
+
+# Data Pre-processing
+### Identified issues within datasets
+IMF data was wide format
+
+### Data melting and cleaning
+- Wrote a reusable melt function
+- Wrote two separate data loops for the respective source groups
+- Normalized to long format
+- Added metadata columns
+- Dropped missing values
+- Converts year to integer
+- Value column properly named
+- Ensured schema consistency across sources
