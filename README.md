@@ -110,3 +110,7 @@ IMF data was wide format
 - Value column properly named
 - Ensured schema consistency across sources
 
+## Notes
+I designed a multi-stage pipeline separating ingestion, cleaning, integration, transformation, and reduction. 
+Logging was implemented to track pipeline execution. 
+Final datasets were standardized and filtered for analytical readiness.
