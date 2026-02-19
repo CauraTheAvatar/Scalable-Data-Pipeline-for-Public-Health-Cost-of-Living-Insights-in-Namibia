@@ -89,6 +89,7 @@ pip install loguru
 pip install pandera
 pip install matplotlib seaborn
 pip install black flake8 isort
+pip install scikit-learn
 
 #### Optional installs
 pip install apache-airflow (Day 6 will confirm this choice)
